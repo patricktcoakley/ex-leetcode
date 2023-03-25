@@ -1,6 +1,6 @@
 defmodule Leetcode.Array.MaxProfit do
   @spec max_profit(prices :: [integer]) :: integer
-  def max_profit(prices), do: max_profits(prices, hd(prices), 0)
+  def max_profit([price | prices]), do: max_profits(prices, price, 0)
 
   defp max_profits([], _smallest, largest), do: largest
 

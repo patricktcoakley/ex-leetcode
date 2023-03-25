@@ -1,4 +1,4 @@
-defmodule Leetcode.String.Permute do
+defmodule Leetcode.Array.Permute do
   @spec permute(nums :: [integer]) :: [[integer]]
   def permute(_nums = []), do: [[]]
 

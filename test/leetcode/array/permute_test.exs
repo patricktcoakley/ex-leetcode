@@ -1,6 +1,6 @@
-defmodule Leetcode.String.PermuteTest do
+defmodule Leetcode.Array.PermuteTest do
   use ExUnit.Case
-  import Leetcode.String.Permute
+  import Leetcode.Array.Permute
 
   describe "permute/1" do
     test "example 1" do
