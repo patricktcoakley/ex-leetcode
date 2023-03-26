@@ -7,7 +7,7 @@ defmodule Leetcode.String.IsValid do
     is_valid(s |> String.graphemes(), [])
   end
 
-  def is_valid([], stack), do: length(stack) == 0
+  def is_valid([], stack), do: Enum.empty?(stack)
 
   def is_valid([h | t], stack) do
     case Map.has_key?(@m, h) do
